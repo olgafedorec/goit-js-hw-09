@@ -18,7 +18,7 @@ export const galleryItems = [
       '../img/g-03-optimized.jpg',
     original:
       '../img/g-03-optimized.jpg',
-    description: 'Aerial Beach View',
+    description: '',
   },
   {
     preview:
