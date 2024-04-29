@@ -5,6 +5,28 @@
   --animation-duration: 250ms;
 }
 
+.sl-overlay {
+  background-color:  rgba(46, 47, 66, 1)!important;
+}
+
+.sl-wrapper .sl-close {
+  font-family: inherit!important;
+  color: #ffffff!important;
+}
+
+.sl-wrapper .sl-counter {
+  color: #ffffff!important;
+}
+
+.sl-wrapper .sl-navigation button.sl-next {
+  font-family: inherit!important;
+  color: #ffffff!important;
+}
+.sl-wrapper .sl-navigation button.sl-prev {
+  font-family: inherit!important;
+  color: #ffffff!important;
+}
+
 .gallery {
   display: grid;
   max-width: 1128px;
