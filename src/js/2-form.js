@@ -28,13 +28,13 @@ function updateForm() {
 updateForm();
 
 function onSubmitFeedbackForm(event) {
+  event.preventDefault();
   if(!formData.email || !formData.message) {
     alert('Fill please all fields');
     return;
   }
 
-  console.log(formData);
-  // console.log(JSON.parse(localStorage.getItem(LOCAL_KEY)));
+  console.log(formData); 
   localStorage.removeItem(LOCAL_KEY);
   feedbackFormEl.reset();
 
