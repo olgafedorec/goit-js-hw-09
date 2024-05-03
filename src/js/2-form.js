@@ -18,6 +18,10 @@ function onSaveFeedback(event) {
   saveFormDataToLocalStorage();
 }
 
+function saveFormDataToLocalStorage() {
+  localStorage.setItem(LOCAL_KEY, JSON.stringify(formData));
+}
+
 function loadFormDataFromLocalStorage() {
   const savedFormData = JSON.parse(localStorage.getItem(LOCAL_KEY)) || {};
   formData.email = savedFormData.email || '';
@@ -26,12 +30,9 @@ function loadFormDataFromLocalStorage() {
 }
 
 function updateForm() {
+  // loadFormDataFromLocalStorage();
   feedbackFormEl.elements.email.value = formData.email;
   feedbackFormEl.elements.message.value = formData.message;
-}
-
-function saveFormDataToLocalStorage() {
-  localStorage.setItem(LOCAL_KEY, JSON.stringify(formData));
 }
 
 function onSubmitFeedbackForm(event) {
@@ -40,13 +41,11 @@ function onSubmitFeedbackForm(event) {
     alert('Please fill in all fields');
     return;
   }
-
   console.log(formData);
-
   localStorage.removeItem(LOCAL_KEY);
-
-  formData.email = "";
-  formData.message = "";
+  
+  formData.email;
+  formData.message;
   feedbackFormEl.reset();
 }
 
